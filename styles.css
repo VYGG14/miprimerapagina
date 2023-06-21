@@ -1,0 +1,255 @@
+body {
+  background-color: lightblue;
+  color: darkblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*codigo para estilizar la barra de navegacion*/
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: rgb(48, 47, 47);
+  border-radius: 7px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+
+li > a {
+  padding: 8px 24px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+a:hover {
+  color: rgb(223, 226, 43);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.button-menu-toggle {
+  display: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.contenedorparrafos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+/*control de imagenes*/
+ .contenedorimagenes {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+  gap: 30px;
+ }
+ 
+ .contenedorimagenes>img {
+  border-radius: 20px;
+  box-shadow: 0 0 15px black;
+ }
+
+ .contenedorimagenes>img:hover {
+  transform: scale(2.0);
+  cursor: pointer;
+}
+
+ .greeting {
+  text-align: center;
+ }
+
+h1 {
+  font-family: arial, sans-serif;
+  font-size: 36px;
+  text-align: center;
+  background-color: bisque;
+  border: 4px solid grey;
+  display: inline-block;
+  padding: 20px;
+  color: blueviolet;
+  margin: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 0 0 15px black;
+}
+
+h1:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+h2 {
+  color: #00f;
+  margin-bottom: 40px;
+}
+
+p {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgb(176, 192, 209);
+}
+
+form {
+  border: 3px solid black;
+  box-shadow: 0 0 15px black;
+  color: white;
+  width: 100%;
+  max-width: 300px;
+  height: fit-content;
+  margin: 100px auto;
+  border-radius: 5%;
+  background-image: url("paisaje-digital-en-atardecer.jpg");
+  object-fit: cover;
+}
+
+input {
+  margin: 0 auto;
+  width: 80%;
+  height: 25px;
+  outline: none;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  min-height: 120px;
+  outline: none;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin: 20px auto;
+}
+
+button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f1f1;
+  min-height: 200px;
+  text-align: center;
+  padding: 20px;
+  margin: 0px;
+ }
+
+  iframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 0px;
+  box-shadow: 0 0 15px black;
+  border-radius: 10px;
+ }
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+/*para hacerla adaptable usando media query*/
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  /*configuracion boton menu*/
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0px 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    transition-duration: .5s;
+  }
+
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(20, 20, 20, 0.95);
+    margin:0px;
+    width: 90%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap: 70px;
+    font-size: 40px;
+  }
+
+ .contenedorimagenes {
+  flex-direction: column;
+ }
+
+ iframe,video {
+  max-width: 90%;
+ }
+}
+
+
+
+
+ 
+ 
+

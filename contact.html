@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-nav">
+      <nav class="navbar" role="navigation">
+        <a href="index.html" class="brand">Mi pagina web</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="button-menu-toggle">Menu</button>
+    </div>
+    <div class="container">
+      <h1>Contacto</h1>
+        <p>¡Contactanos para cualquier cosulta o solicitud de informacion!</p>
+      <form action="" id="myForm"> <!--  o este form.. se cierra igual-->
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required>
+        <!--campo para correo electronico-->
+        <label for="email">Correo electronico:</label>
+        <input type="email" id="email" name="email" />
+        <!--boton de envio-->
+        <label for="mensaje">Mensaje</label>
+        <button type="submit">Enviar</button>
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+      </form>
+    </div>
+    <div class="buttonclickenmi">
+    <button onclick="showAlert()">¡haz click en mi</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
